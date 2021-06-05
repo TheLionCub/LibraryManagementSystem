@@ -1,8 +1,8 @@
-#Library Management System [JavaFX + SQLite]
+# Library Management System using JavaFX + SQLite
 
 This is a simple library management system for educational institutions.
 
-###Main features
+### Main features
  * Account authorization system;
  * Built-in FAQ blank using CHM;
  * Multilingual (supports both English and Russian);
@@ -14,7 +14,7 @@ This is a simple library management system for educational institutions.
  * View books and members details and edit it anytime.
  * Convenient search system;
 
-###Images
+### Images
   <p align="center">
    <img src="https://i.imgur.com/Tf5BIao.png">
   </p>
@@ -31,7 +31,7 @@ This is a simple library management system for educational institutions.
     <img src="https://i.imgur.com/DldI8HM.png">
    </p>
    
-###Libraries
+### Libraries
  * [Commons Lang](https://commons.apache.org/proper/commons-lang/)
  * [Java EE 6](https://jcp.org/en/jsr/detail?id=316)
  * [Jackson](https://github.com/FasterXML/jackson)
