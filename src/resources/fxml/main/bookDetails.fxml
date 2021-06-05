@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.library.application.controllers.main.BookDetailsController" fx:id="anchorPane">
+    <children>
+        <VBox alignment="CENTER" prefHeight="467.3333333333333" prefWidth="801.3333333333334" spacing="2.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="readState" text="%scene.bookDetails.readMode" textFill="#c4c4c4">
+                    <font>
+                        <Font name="Arial Bold" size="12.0"/>
+                    </font>
+                </Label>
+                <HBox alignment="CENTER" prefHeight="48.0" prefWidth="500.0" spacing="30.0">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="120.0">
+                            <children>
+                                <Label text="ID">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="id" editable="false"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="240.0">
+                            <children>
+                                <Label text="%scene.bookDetails.title">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="title" editable="false" prefHeight="25.0" prefWidth="154.0"/>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                            <children>
+                                <Label text="%scene.bookDetails.publishHouse">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="publishHouse" editable="false" prefHeight="25.0" prefWidth="154.0"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="500.0"
+                      spacing="30.0">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="120.0">
+                            <children>
+                                <Label text="%scene.bookDetails.serial">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="serial" editable="false"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                            <children>
+                                <Label text="%scene.bookDetails.author">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="author" editable="false" prefHeight="25.0" prefWidth="154.0"/>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                            <children>
+                                <Label text="%scene.bookDetails.publishYear">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="publishYear" editable="false" prefHeight="25.0" prefWidth="154.0"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="58.0" prefHeight="48.0" prefWidth="500.0"
+                      spacing="30.0">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="120.0">
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                            <children>
+                                <Label text="%scene.bookDetails.category">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="category" editable="false" prefHeight="25.0" prefWidth="154.0"/>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                            <children>
+                                <Label text="%scene.bookDetails.city">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="publishCity" editable="false" prefHeight="25.0" prefWidth="154.0"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="67.0" prefWidth="500.0" spacing="30.0">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="120.0">
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="240.0">
+                            <children>
+                                <Label text="%scene.bookDetails.description">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextArea fx:id="description" editable="false" prefHeight="200.0" prefWidth="200.0"
+                                          wrapText="true"/>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                            <children>
+                                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                    <children>
+                                        <VBox>
+                                            <children>
+                                                <Label text="%scene.bookDetails.pages">
+                                                    <font>
+                                                        <Font name="Arial Bold" size="12.0"/>
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="pages" editable="false" prefHeight="25.0"
+                                                           prefWidth="154.0"/>
+                                            </children>
+                                        </VBox>
+                                        <VBox>
+                                            <children>
+                                                <Label text="%scene.bookDetails.language">
+                                                    <font>
+                                                        <Font name="Arial Bold" size="12.0"/>
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="language" editable="false" prefHeight="25.0"
+                                                           prefWidth="154.0"/>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="201.0" prefHeight="88.0" prefWidth="600.0"
+                      spacing="30.0">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="120.0">
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="88.0" prefWidth="240.0">
+                            <children>
+                                <Label text="%scene.bookDetails.notes">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextArea fx:id="notes" editable="false" prefHeight="200.0" prefWidth="200.0"
+                                          wrapText="true"/>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="240.0" spacing="5.0">
+                            <children>
+                                <VBox>
+                                    <children>
+                                        <Label text="%scene.bookDetails.condition">
+                                            <font>
+                                                <Font name="Arial Bold" size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="condition" editable="false" prefHeight="25.0"
+                                                   prefWidth="154.0"/>
+                                    </children>
+                                </VBox>
+                                <VBox>
+                                    <children>
+                                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                            <children>
+                                                <VBox prefHeight="200.0" prefWidth="120.0">
+                                                    <children>
+                                                        <Label text="%scene.bookDetails.created">
+                                                            <font>
+                                                                <Font name="Arial Bold" size="12.0"/>
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="created" editable="false" prefHeight="25.0"
+                                                                   prefWidth="154.0"/>
+                                                    </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="120.0">
+                                                    <children>
+                                                        <Label text="%scene.bookDetails.lastUpdated">
+                                                            <font>
+                                                                <Font name="Arial Bold" size="12.0"/>
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="lastUpdated" editable="false"
+                                                                   prefHeight="25.0"
+                                                                   prefWidth="154.0"/>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="48.0" prefWidth="500.0" spacing="30.0">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="120.0">
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                            <children>
+                                <Label text="%scene.bookDetails.available">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <HBox prefHeight="100.0" prefWidth="240.0">
+                                    <children>
+                                        <TextField HBox.hgrow="ALWAYS" fx:id="available" editable="false"
+                                                   prefHeight="25.0"
+                                                   prefWidth="209.0"/>
+                                        <Button onAction="#bookKeeperButtonAction" fx:id="bookKeeperButton"
+                                                mnemonicParsing="false" disable="true">
+                                            <graphic>
+                                                <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="/resources/images/icons/default/user.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0"/>
+                    </children>
+                </HBox>
+                <Label fx:id="alertLabel" alignment="CENTER" layoutX="370.0" layoutY="18.0" prefHeight="17.0"
+                       prefWidth="327.0"
+                       text="%text.error"
+                       visible="false"/>
+            </children>
+            <padding>
+                <Insets bottom="50.0" left="50.0" right="50.0" top="50.0"/>
+            </padding>
+        </VBox>
+        <HBox fx:id="filterHBox" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="273.0" spacing="5.0">
+            <children>
+                <ChoiceBox fx:id="filterChoiceBox" prefHeight="25.0" prefWidth="50.0"/>
+                <TextField fx:id="filterTextField" onTextChange="#onFilterTextChange"/>
+                <HBox prefHeight="25.0" prefWidth="55.0" spacing="5.0">
+                    <children>
+                        <Button onAction="#filterButtonAction" mnemonicParsing="false">
+                            <graphic>
+                                <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="/resources/images/icons/default/filter.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button onAction="#clearButtonAction" mnemonicParsing="false">
+                            <graphic>
+                                <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="/resources/images/icons/default/forbid.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox layoutX="15.0" layoutY="427.0" prefHeight="25.0" prefWidth="771.0" spacing="8.0"
+              AnchorPane.bottomAnchor="14.999999999999982" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+            <children>
+                <Button fx:id="deleteBookButton" disable="true" layoutX="527.0" layoutY="11.0" mnemonicParsing="false"
+                        onAction="#deleteBook">
+                    <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/resources/images/icons/default/bin.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="issueButton" disable="true" mnemonicParsing="false" onAction="#openIssueBookWindow"
+                        prefHeight="25.0" prefWidth="125.0" text="%scene.bookDetails.issueReturn">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/resources/images/icons/default/user-check.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="editButton" alignment="CENTER" disable="true" mnemonicParsing="false"
+                        onAction="#editButtonAction" prefHeight="25.0" prefWidth="125.0" text="%button.edit"
+                        textAlignment="CENTER">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/resources/images/icons/default/pencil.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="saveButton" disable="true" mnemonicParsing="false" onAction="#saveButtonAction">
+                    <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/resources/images/icons/default/floppy-disk.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="undoButton" disable="true" mnemonicParsing="false" onAction="#undoButtonAction">
+                    <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/resources/images/icons/default/undo.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

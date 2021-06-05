@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="521.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.application.controllers.MainController">
+    <children>
+        <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0"
+                 AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="%scene.main.account">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleLogoutButton" text="%scene.main.logout"/>
+                    </items>
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons/default/user.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Menu>
+                <Menu mnemonicParsing="false" text="%scene.main.edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openIssueBookWindow" text="%button.issueBook"/>
+                        <MenuItem mnemonicParsing="false" onAction="#openReturnBookWindow" text="%button.returnBook"/>
+                    </items>
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons/default/pencil.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Menu>
+                <Menu mnemonicParsing="false" text="%scene.main.settings">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleSettingsButton" text="%scene.main.settings"/>
+                        <MenuItem mnemonicParsing="false" onAction="#handleDocsButton" text="%scene.main.faq"/>
+                    </items>
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons/default/wrench.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TabPane layoutY="25.0" prefHeight="375.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE"
+                 AnchorPane.bottomAnchor="-0.3333333333333144" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="25.0" fx:id="tabPane">
+            <tabs>
+                <Tab text="%scene.main.main">
+                    <content>
+                        <fx:include source="main/main.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="%scene.main.booksList">
+                    <content>
+                        <fx:include fx:id="bookSearch" source="main/bookSearch.fxml"/>
+                    </content>
+                </Tab>
+                <Tab fx:id="bookDetailsTab" text="%scene.main.bookDetails">
+                    <content>
+                        <fx:include source="main/bookDetails.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="%scene.main.membersList">
+                    <content>
+                        <fx:include fx:id="memberSearch" source="./main/memberSearch.fxml"/>
+                    </content>
+                </Tab>
+                <Tab fx:id="memberDetailsTab" text="%scene.main.memberDetails">
+                    <content>
+                        <fx:include source="./main/memberDetails.fxml"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

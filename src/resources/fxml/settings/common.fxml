@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefHeight="400.0" prefWidth="600.0"
+            fx:id="anchorPane" fx:controller="com.library.application.controllers.settings.CommonController">
+    <HBox alignment="CENTER_LEFT" layoutX="65.0" layoutY="99.0" prefHeight="356.6666666666667"
+          prefWidth="583.3333333333334" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+            <VBox prefHeight="384.0" prefWidth="396.0" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                </padding>
+                <children>
+                    <Label prefHeight="0.0" prefWidth="109.0" text="%scene.settings.common.listSettings">
+                        <VBox.margin>
+                            <Insets/>
+                        </VBox.margin>
+                    </Label>
+                    <TreeView fx:id="treeView" prefHeight="401.0" prefWidth="445.0" VBox.vgrow="ALWAYS">
+                        <VBox.margin>
+                            <Insets/>
+                        </VBox.margin>
+                    </TreeView>
+                </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="384.0" prefWidth="205.0"
+                  spacing="8.0">
+                <children>
+                    <Button onAction="#openChangesWindow" mnemonicParsing="false" prefHeight="25.0" prefWidth="247.0"
+                            text="%scene.settings.common.changes"/>
+                    <ChoiceBox fx:id="languageChoiceBox" prefHeight="25.0" prefWidth="247.0"/>
+                    <Region VBox.vgrow="ALWAYS"/>
+                    <Button onAction="#openCreateAdminAccountWindow" mnemonicParsing="false" prefHeight="25.0"
+                            prefWidth="247.0"
+                            text="%scene.settings.common.newAccount"/>
+                    <Button onAction="#openDeleteAdminAccountWindow" textFill="#ff3837" mnemonicParsing="false"
+                            prefHeight="25.0" prefWidth="247.0"
+                            text="%scene.settings.common.deleteAccount"/>
+                </children>
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                </padding>
+            </VBox>
+        </children>
+    </HBox>
+</AnchorPane>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.library.application.controllers.main.MemberAddController" fx:id="anchorPane">
+    <VBox alignment="CENTER" prefHeight="467.3333333333333" prefWidth="801.3333333333334" spacing="2.0"
+          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+          AnchorPane.topAnchor="0.0">
+        <children>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="500.0" spacing="30.0">
+                <children>
+                    <VBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="240.0">
+                        <children>
+                            <Label text="%scene.addMember.fullNameS">
+                                <font>
+                                    <Font name="Arial Bold" size="12.0"/>
+                                </font>
+                            </Label>
+                            <TextField onTextChange="#onRequiredFieldChange" fx:id="fullName" prefHeight="25.0"
+                                       prefWidth="154.0"/>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="500.0" spacing="30.0">
+                <children>
+                    <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                        <children>
+                            <Label text="%scene.memberDetails.email">
+                                <font>
+                                    <Font name="Arial Bold" size="12.0"/>
+                                </font>
+                            </Label>
+                            <TextField fx:id="email" prefHeight="25.0" prefWidth="154.0"/>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="58.0" prefHeight="48.0" prefWidth="500.0" spacing="30.0">
+                <children>
+                    <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                        <children>
+                            <Label text="%scene.memberDetails.phone">
+                                <font>
+                                    <Font name="Arial Bold" size="12.0"/>
+                                </font>
+                            </Label>
+                            <TextField fx:id="phone" prefHeight="25.0" prefWidth="154.0"/>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="67.0" prefWidth="500.0" spacing="30.0">
+                <children>
+                    <VBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="240.0">
+                        <children>
+                            <Label text="%scene.memberDetails.address">
+                                <font>
+                                    <Font name="Arial Bold" size="12.0"/>
+                                </font>
+                            </Label>
+                            <TextArea fx:id="address" prefHeight="200.0" prefWidth="200.0"/>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="201.0" prefHeight="88.0" prefWidth="600.0" spacing="30.0">
+                <children>
+                    <VBox alignment="CENTER_LEFT" prefHeight="88.0" prefWidth="240.0">
+                        <children>
+                            <Label text="%scene.memberDetails.notes">
+                                <font>
+                                    <Font name="Arial Bold" size="12.0"/>
+                                </font>
+                            </Label>
+                            <TextArea fx:id="notes" prefHeight="200.0" prefWidth="200.0"/>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="500.0" spacing="30.0">
+                <children>
+                    <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                        <children>
+                            <Label text="%scene.addMember.birthDateFormat">
+                                <font>
+                                    <Font name="Arial Bold" size="12.0"/>
+                                </font>
+                            </Label>
+                            <DatePicker fx:id="datePicker" prefHeight="25.0" prefWidth="324.0"/>
+                            <HBox prefHeight="100.0" prefWidth="240.0"/>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="500.0" spacing="30.0">
+                <children>
+                    <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="240.0">
+                        <children>
+                            <Label text="%scene.memberDetails.course">
+                                <font>
+                                    <Font name="Arial Bold" size="12.0"/>
+                                </font>
+                            </Label>
+                            <ChoiceBox fx:id="courseChoiceBox" prefHeight="25.0" prefWidth="324.0"/>
+                            <HBox prefHeight="100.0" prefWidth="240.0"/>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <Label fx:id="alertLabel" alignment="CENTER" prefHeight="17.0" prefWidth="632.0" text=" " visible="false"/>
+        </children>
+        <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0"/>
+        </padding>
+    </VBox>
+    <HBox layoutX="15.0" layoutY="427.0" prefHeight="25.0" prefWidth="771.0" spacing="8.0"
+          AnchorPane.bottomAnchor="14.999999999999982" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+        <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+            <Button fx:id="createMemberButton" onAction="#createNewMember" alignment="CENTER" disable="true"
+                    mnemonicParsing="false" prefHeight="25.0"
+                    prefWidth="125.0" text="%button.add" textAlignment="CENTER">
+                <graphic>
+                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="/resources/images/icons/default/plus.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button onAction="#clearAllFields" alignment="CENTER" layoutX="455.0" layoutY="10.0"
+                    mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="%button.drop" textAlignment="CENTER">
+                <graphic>
+                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="/resources/images/icons/default/forbid.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </children>
+    </HBox>
+</AnchorPane>

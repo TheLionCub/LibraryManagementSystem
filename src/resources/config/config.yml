@@ -1,0 +1,110 @@
+language: en
+
+languages:
+  - Русский
+  - Английский
+
+categories: [ ]
+
+publishHouses: [ ]
+
+courses:
+  - number: 1
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 2
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 3
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 4
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 5
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 6
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 7
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 8
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 9
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 10
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж
+  - number: 11
+    letters:
+      - А
+      - Б
+      - В
+      - Г
+      - Д
+      - Е
+      - Ж

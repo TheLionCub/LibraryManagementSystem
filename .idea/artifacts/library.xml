@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="library">
+    <output-path>$PROJECT_DIR$/out/artifacts/library</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.library.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/src/resources/images/book.png" />
+            <option name="macIcon" value="$PROJECT_DIR$/src/resources/images/book.icns" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/resources/images/book.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="library.jar">
+        <element id="module-output" name="library" />
+      </element>
+    </root>
+  </artifact>
+</component>

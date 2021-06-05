@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="anchorPane" prefHeight="392.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.application.controllers.LoginController">
+    <children>
+        <VBox layoutY="-32.0" prefHeight="392.0" prefWidth="349.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="149.0" prefWidth="349.0" VBox.vgrow="NEVER">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../images/book.png"/>
+                        </ImageView>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="%scene.login.label1"
+                               textFill="#4f4f4f" textOverrun="CLIP">
+                            <font>
+                                <Font name="Verdana" size="12.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="%scene.login.label2"
+                               textFill="#4f4f4f" textOverrun="CLIP">
+                            <font>
+                                <Font name="Verdana Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="349.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <VBox maxWidth="-Infinity" prefHeight="44.0" prefWidth="185.0">
+                            <children>
+                                <Label alignment="CENTER" text="%scene.login.username" textFill="#4f4f4f"
+                                       textOverrun="CLIP">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="usernameField" alignment="TOP_LEFT" maxWidth="195.0" prefHeight="25.0"
+                                           prefWidth="195.0"/>
+                            </children>
+                        </VBox>
+                        <VBox maxWidth="-Infinity" prefHeight="41.0" prefWidth="185.0">
+                            <children>
+                                <Label alignment="CENTER" text="%scene.login.password" textFill="#4f4f4f"
+                                       textOverrun="CLIP">
+                                    <font>
+                                        <Font name="Arial Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <PasswordField fx:id="passwordField" alignment="TOP_LEFT" maxWidth="195.0"
+                                               prefHeight="25.0" prefWidth="195.0"/>
+                            </children>
+                        </VBox>
+                        <Button mnemonicParsing="false" onAction="#handleLoginButtonAction"
+                                style="-fx-background-color: linear-gradient(to top, #29a845, #32cb55); -fx-text-fill: white; -fx-border-color: green; -fx-border-width: 0.5; -fx-border-radius: 2;"
+                                text="%scene.login.login" textAlignment="CENTER">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets top="20.0"/>
+                            </VBox.margin>
+                        </Button>
+                        <Label fx:id="alertLabel" alignment="CENTER" maxWidth="1.7976931348623157E308"
+                               textAlignment="CENTER" textFill="RED">
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <Hyperlink alignment="CENTER" fx:id="createUserHyperButton" maxWidth="1.7976931348623157E308"
+                                   onAction="#loadCreateAdminStage" text="%scene.login.createUser" visible="false">
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
+                        </Hyperlink>
+                    </children>
+                </VBox>
+                <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="11.0" prefWidth="349.0">
+                    <children>
+                        <Hyperlink onAction="#handleDocsButton" text="%scene.login.faq">
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Hyperlink>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

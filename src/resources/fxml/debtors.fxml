@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.library.application.controllers.DebtorsController">
+    <children>
+        <TableView fx:id="tableView" layoutX="14.0" layoutY="29.0" prefHeight="409.0" prefWidth="509.0"
+                   AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="211.0"
+                   AnchorPane.topAnchor="29.0">
+            <placeholder>
+                <Label text=" "/>
+            </placeholder>
+            <columns>
+                <TableColumn fx:id="memberColumn" reorderable="false" prefWidth="75.0" text="%scene.debtors.member"/>
+                <TableColumn fx:id="bookColumn" reorderable="false" prefWidth="75.0" text="%scene.debtors.book"/>
+                <TableColumn fx:id="rentDeadline" reorderable="false" prefWidth="75.0" text="%scene.debtors.rentDeadline"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <VBox alignment="CENTER_LEFT" layoutX="599.0" layoutY="29.0" prefHeight="48.0" prefWidth="185.0"
+              AnchorPane.rightAnchor="14.666666666666657" AnchorPane.topAnchor="29.0">
+            <children>
+                <Label text="%scene.debtors.rendDeadlineLabel">
+                    <font>
+                        <Font name="Arial Bold" size="12.0"/>
+                    </font>
+                </Label>
+                <DatePicker fx:id="datePicker" prefHeight="25.0" prefWidth="227.0" showWeekNumbers="true"/>
+            </children>
+        </VBox>
+        <Button onAction="#setData" layoutX="733.0" layoutY="77.0" mnemonicParsing="false" text="%scene.debtors.search"
+                AnchorPane.rightAnchor="15.333333333333336" AnchorPane.topAnchor="77.0"/>
+    </children>
+</AnchorPane>

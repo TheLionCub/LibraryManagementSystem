@@ -1,0 +1,9 @@
+*:disabled {
+    -fx-opacity: 1.0;
+}
+
+.date-picker-popup > * > .selected {
+    -fx-background-color: #ff4b4b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

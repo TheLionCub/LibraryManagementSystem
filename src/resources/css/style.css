@@ -1,0 +1,51 @@
+* {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-accent: #e0e0e0;
+    -fx-focus-color: black;
+    -fx-faint-focus-color: transparent;
+}
+
+*:focused {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-background-insets: 0, 0.5;
+}
+
+.tab {
+    -fx-background-insets: 1;
+}
+
+.tab:selected {
+    -fx-background-insets: 0;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+.text-field,
+.text-area,
+.hyperlink {
+    -fx-accent: #0078D7;
+}
+
+.tab-pane:top,
+*.tab-header-area {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+}
+
+.date-picker:focused > .text-field,
+.date-picker > .text-field:focused,
+.combo-box:focused > .text-field,
+.combo-box > .text-field:focused {
+    -fx-background-insets: 0.5;
+}
+
+*.menu-item {
+    -fx-pref-height: 0.5cm;
+}
+
+.button {
+    -fx-background-insets: -0.5 -0.5 -0.5 -0.5, 0, 1, 1;
+}
